@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c2f33;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main-container {
+    display: flex; /* Use flexbox to arrange child elements side by side */
+    width: 800px; /* Set a width for the main container */
+}
+
+#game-container {
+    background-color: #23272a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 50%; /* Make the game container take up 50% of the width */
+    text-align: center;
+}
+
+#info-panel {
+    margin-left: 20px; /* Add some space between the game and info panel */
+    padding: 10px;
+    border: 1px solid #99aab5;
+    border-radius: 10px;
+    background-color: #40444b;
+    color: #ffffff;
+    font-size: 14px;
+    height: 400px; /* Set a fixed height for the info panel */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    width: 50%; /* Make the info panel the same width as the game container */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#power-bar-container {
+    background-color: #40444b;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#power-bar {
+    height: 20px;
+    width: 100%;
+    background-color: green;
+    border-radius: 5px;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+#cameras, #doors {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-button {
+    background-color: #7289da;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: #5b6eae;
+}
+
+#office {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #99aab5;
+    border-radius: 10px;
+    background-color: #40444b;
+}

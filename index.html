@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF-like Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="game-container">
+            <h1>FNAF-like Game</h1>
+            <div id="power-bar-container">
+                <div id="power-bar"></div>
+            </div>
+            <div id="controls">
+                <div id="cameras">
+                    <h2>Cameras</h2>
+                    <button class="control-button" onclick="checkCamera(1)">Camera 1</button>
+                    <button class="control-button" onclick="checkCamera(2)">Camera 2</button>
+                    <button class="control-button" onclick="checkCamera(3)">Camera 3</button>
+                </div>
+                <div id="doors">
+                    <h2>Doors</h2>
+                    <button class="control-button" onclick="toggleDoor('left')">Toggle Left Door</button>
+                    <button class="control-button" onclick="toggleDoor('right')">Toggle Right Door</button>
+                </div>
+            </div>
+            <div id="office">Office</div>
+        </div>
+        <div id="info-panel"></div> <!-- Info panel placed here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
